@@ -10,7 +10,7 @@ export class FoodService {
 
   constructor(private _httpClient:HttpClient) { }
 
-  private baseUrl = 'http://172.27.59.174:8080/food-menu';
+  private baseUrl = 'http://localhost:8080/food-menu';
 
   getFoodListByRestuarant(restuarant_id:any): Observable<any> {
     return this._httpClient.get(`${this.baseUrl}/getFoodByRestaurant/${restuarant_id}`);
