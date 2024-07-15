@@ -21,7 +21,7 @@ import com.cybage.model.Restaurant;
 import com.cybage.service.AdminServices;
 import com.cybage.service.RestaurentService;
 
-@CrossOrigin("*")
+@CrossOrigin("http://localhost:4200")
 @RestController
 @RequestMapping("/restaurant")
 public class AdminController 
