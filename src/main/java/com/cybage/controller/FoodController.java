@@ -28,7 +28,7 @@ import com.cybage.service.RestaurentService;
 
 @RestController
 @RequestMapping("/food-menu")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 public class FoodController {
 	@Autowired
 	private FoodMenusService foodMenusService;
