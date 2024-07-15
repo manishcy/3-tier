@@ -8,26 +8,26 @@ import { Observable } from 'rxjs';
 })
 export class UserServiceService {
 
-  baseUrl="http://localhost:8080";
+  baseUrl="http://172.27.59.174:8080";
   constructor(private _httpClient:HttpClient) { }
 
   registerUser(user:any){
-    return this._httpClient.post<any>("http://localhost:8080/food-delivery/register", user);
+    return this._httpClient.post<any>("http://172.27.59.174:8080/food-delivery/register", user);
   }
 
   addrestaurent(user:any){
-    return this._httpClient.post<any>("http://localhost:8080/restaurant/", user);
+    return this._httpClient.post<any>("http://172.27.59.174:8080/restaurant/", user);
  
   }
 
   
   getUserList(): Observable<any> {
-    return this._httpClient.get("http://localhost:8080/food-delivery/allUser");
+    return this._httpClient.get("http://172.27.59.174:8080/food-delivery/allUser");
     //return this._httpClient.get("http://localhost:8080/food-delivery/allUser");
   }
 
   getrestaurentList(): Observable<any> {
-    return this._httpClient.get("http://localhost:8080/restaurant/getAllresturant");
+    return this._httpClient.get("http://172.27.59.174:8080/restaurant/getAllresturant");
     //return this._httpClient.get("http://localhost:8080/food-delivery/allUser");
   }
 
