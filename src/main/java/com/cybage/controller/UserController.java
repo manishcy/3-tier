@@ -21,7 +21,7 @@ import com.cybage.exception.CustomException;
 import com.cybage.model.User;
 import com.cybage.service.UserService;
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/food-delivery")
 public class UserController {
