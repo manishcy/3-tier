@@ -14,7 +14,7 @@ export class UserloginService {
 
   loginUser(user:User):Observable<object>{
     console.log(user);
-    return this._httpClient.post<User>("http://localhost:8080/food-delivery/login",user)
+    return this._httpClient.post<User>("http://172.27.59.174:8080/food-delivery/login",user)
    // return this._httpClient.post(`${this.baseUrl}`,user);
   }
 
